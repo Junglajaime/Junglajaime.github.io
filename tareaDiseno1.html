@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Local</title>
+    <link rel="stylesheet" href="tareaDiseno1.css">
+
+    <script>
+        var lang = {
+            'es': {
+                'entrantes': 'Entrantes Fríos',
+                'raciones': 'Raciones',
+                'platos': 'Platos Principales',
+                'postres': 'Postres',
+                'contacto': 'Contacto',
+                'adress': 'Dirección',
+                'phone number': 'Teléfono',
+                'language': 'Idioma'
+            },
+            'en': {
+                'entrantes': 'Cold Starters',
+                'raciones': 'Appetizers',
+                'platos': 'Main Courses',
+                'postres': 'Desserts',
+                'contacto': 'Contact',
+                'adress': 'Adress',
+                'phone number': 'Phone number',
+                'language': 'Language'
+            }
+        };
+    
+        function changeLanguage(language) {
+            var elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(function (element) {
+                var key = element.getAttribute('data-translate');
+                element.textContent = lang[language][key];
+            });
+            // Mantén activa la opción de idioma seleccionada
+            document.getElementById(language).classList.add('active');
+        }
+    </script>
+
+    <style>
+        /* Estilo para la opción de idioma activa */
+        .active {
+            font-weight: bold;
+        }
+
+        /* Alinea los idiomas a la derecha */
+        .language {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo del restaurante">
+        </div>
+        <div class="language">
+            <a href="javascript:void(0);" id="es" onclick="changeLanguage('es')">Español</a> | <a href="javascript:void(0);" id="en" onclick="changeLanguage('en')">English</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#entrantes" data-translate="entrantes">Entrantes Fríos</a></li>
+                <li><a href="#raciones" data-translate="raciones">Raciones</a></li>
+                <li><a href="#platos" data-translate="platos">Platos Principales</a></li>
+                <li><a href="#postres" data-translate="postres">Postres</a></li>
+                <li><a href="#contacto" data-translate="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="entrantes">
+        <h2 data-translate="entrantes">Entrantes Fríos</h2>
+        <!-- Aquí puedes añadir información sobre los entrantes fríos -->
+    </section>
+    <section id="raciones">
+        <h2 data-translate="raciones">Raciones</h2>
+        <!-- Aquí puedes añadir información sobre las raciones -->
+    </section>
+    <section id="platos">
+        <h2 data-translate="platos">Platos Principales</h2>
+        <!-- Aquí puedes añadir información sobre los platos principales -->
+    </section>
+    <section id="postres">
+        <h2 data-translate="postres">Postres</h2>
+        <!-- Aquí puedes añadir información sobre los postres -->
+    </section>
+    <section id="contacto">
+        <h2 data-translate="contacto">Contacto</h2>
+        <p data-translate="adress">Dirección</p>
+        <p data-translate="phone number">Teléfono</p>
+        <div id="mapa">
+            <!-- Aquí puedes insertar un mapa de ubicación del restaurante -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Restaurante Local</p>
+    </footer>
+</body>
+</html>

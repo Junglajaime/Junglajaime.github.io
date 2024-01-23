@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos de las secciones */
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilos del mapa de ubicación */
+#mapa {
+    width: 100%;
+    height: 300px;
+    background-image: url('mapa.jpg');
+    background-size: cover;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-width: 200px;
+    height: auto; /* Esto mantiene la relación de aspecto original */
+}
+
+/* Estilo para los iconos de banderas */
+.flag {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Clases para las banderas */
+.flag-es {
+    background-image: url('bandera-es.png'); /* Ruta a la imagen de la bandera española */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.flag-en {
+    background-image: url('bandera-en.png'); /* Ruta a la imagen de la bandera inglesa */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
