@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('logo.png'); 
+    background-image: url('images/logo.png'); 
     background-size: 400px; 
     background-attachment: fixed;
     background-position: center; 
@@ -110,7 +110,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-image: url('header-bg.jpg');
+    background-image: url('images/header-bg.jpg');
     background-size: cover;
     color: white;
     text-align: center;
@@ -193,12 +193,12 @@ section h2{
 
 /* Clases para las banderas */
 .flag-es {
-    background-image: url('bandera-es.png');
+    background-image: url('images/bandera-es.png');
     font-weight: normal;
 }
 
 .flag-en {
-    background-image: url('bandera-en.png');
+    background-image: url('images/bandera-en.png');
     font-weight: normal;
 }
 /* Estilos para los productos dentro del carrusel */
