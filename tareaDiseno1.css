@@ -108,6 +108,18 @@ body {
     text-align: center;
 }
 
+
+.video-container {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+
+.video-container video {
+    width: 100%; 
+    height: auto;
+}
+
 /* Estilos del encabezado */
 header {
     background-image: url('images/header-bg.jpg');
@@ -156,8 +168,10 @@ section h2{
                  1px 1px 0 #000;
 }
 
-
-
+.audio-container {
+    text-align: center; /* Centrar los elementos dentro del contenedor */
+    margin-bottom: 20px; /* Espacio inferior entre los elementos de audio */
+  }
 
 
 /* Estilos para el logo */
