@@ -207,7 +207,7 @@ section h2{
 
 /* Clases para las banderas */
 .flag-es {
-    background-image: url('images/bandera-es.png');
+    background-image: url('images/bandera-es.svg');
     font-weight: normal;
 }
 
